@@ -51,7 +51,7 @@ body {
 
 .navbar {
   grid-area: navbar;
-  background-color: red;
+  background-color: #2e3133;
 }
 
 .playlist {
@@ -98,6 +98,10 @@ body {
   font-size: 25px;
   color: white;
   text-decoration: none;
+  transition: color ease-in-out 200ms;
+}
+.navbar a:hover {
+  color: rgb(78, 197, 233);
 }
 
 @media screen and (min-width: 500px) {
