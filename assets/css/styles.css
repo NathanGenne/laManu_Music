@@ -39,7 +39,7 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: 0.1fr 1.9fr;
+  grid-template-columns: 0.2fr 1.5fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -85,4 +85,131 @@ body {
 .audio-control {
   grid-area: audio-control;
   background-color: blue;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.15fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.12fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 31px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.08fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 38px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.07fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.07fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+  }
 }
