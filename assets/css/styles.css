@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -69,7 +71,7 @@ body {
 
 .playlist-name {
   grid-area: playlist-name;
-  background-color: violet;
+  background-color: purple;
 }
 
 .playlist-list {
@@ -85,4 +87,53 @@ body {
 .audio-control {
   grid-area: audio-control;
   background-color: blue;
+}
+
+.flex-container {
+  display: flex;
+  margin: 25px;
+  column-gap: 20px;
+
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.item-2 {
+  color: white;
+  font-size: 15px;
+}
+
+.item-2 h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+
+@media screen and (max-width: 400px) {
+  .flex-container {
+    display: flex;
+    margin: 25px;
+    column-gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.item-1 img {
+  width: 300px;
+  height: 325px;
+}
+
+.playlist-list {
+  flex-direction: row;
+  border-top: 1px solid white;
+  display: grid;
+  
+}
+
+.playlist-list:hover {
+  color: rgb(78, 197, 233);
 }
