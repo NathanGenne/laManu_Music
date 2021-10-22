@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ html {
 }
 body {
   background-color: white;
+  font-family: "Montserrat";
   margin: auto;
   font-size: 14px;
   line-height: 1.5em;
@@ -69,20 +72,273 @@ body {
 
 .playlist-name {
   grid-area: playlist-name;
-  background-color: violet;
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 15, 15);
 }
 
 .playlist-list {
   grid-area: playlist-list;
-  background-color: pink;
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 15, 15);
 }
 
 .playlist-empty-space {
   grid-area: playlist-empty-space;
-  background-color: yellow;
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 15, 15);
 }
 
 .audio-control {
   grid-area: audio-control;
-  background-color: blue;
+  background-color: #2E3133;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audio-control .phone-organizing {
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+}
+
+.image-album img {
+  height: 80px;
+  width: 80px;
+}
+
+.image-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-artist {
+  color: white;
+  padding: 20px;
+  justify-content:flex-end;
+}
+
+.title-artist h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(78, 197, 233);
+}
+
+.nav-buttons {
+  width: 500px;
+  height:80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content:space-around;
+  border-left: 2px solid #555555;
+}
+
+.nav-buttons a {
+  font-size: 40px;
+  transition: color ease-in-out 200ms;
+}
+
+.nav-buttons a:hover {
+  cursor: pointer;
+  color: rgb(78, 197, 233);
+}
+
+.nav-buttons .active {
+  color: rgb(0, 68, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .audio-control {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-buttons {
+    border-left: 2px solid #2E3133;
+  }
+  .audio-control .phone-organizing {
+    border-bottom: 2px solid #555555;
+  }
+  .nav-buttons {
+    width: 400px;
+    height: 50px;
+  }
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #2e3133;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  transition: color ease-in-out 200ms;
+}
+.navbar a:hover {
+  color: rgb(78, 197, 233);
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.15fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.12fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 31px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.08fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 38px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.07fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main {
+    display: grid;
+    grid-template-columns: 0.07fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar playlist"
+      "navbar playlist";
+    grid-area: main;
+  }
+  .navbar a {
+    font-size: 45px;
+    color: white;
+    text-decoration: none;
+  }
+}
+.item-2 {
+  color: white;
+  font-size: 15px;
+}
+
+.item-2 h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+
+@media screen and (max-width: 400px) {
+  .flex-container {
+    display: flex;
+    margin: 25px;
+    column-gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.item-1 img {
+  width: 300px;
+  height: 325px;
+}
+
+.playlist-list {
+  flex-direction: row;
+  border-top: 1px solid white;
+  display: grid;
+  
+}
+.flex-container {
+  display: flex;
+  margin: 25px;
+  column-gap: 20px;
+
+}
+.playlist-list:hover {
+  color: rgb(78, 197, 233);
 }
